@@ -17,7 +17,6 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    color: white;
 }
 .sectionLogin form section{
    width: 40%;

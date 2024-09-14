@@ -1,6 +1,16 @@
 import Header from "../../components/Header"
+import { users } from "../../data/dataUsers"
+
 import './Login.css'
 const Login = () => {
+
+    console.log(usuarios[0])
+    function login() {
+        if (users[0].user == 'Jaime' && users[0].password == '12345') {
+            alert('Inicio de sesión')
+        }
+    }
+
     return (
         <section className="sectionLogin">
             <Header />
@@ -13,7 +23,7 @@ const Login = () => {
                     <label htmlFor="">Contraseña</label>
                     <input type="password" />
                 </section>
-                <button type="button">Iniciar Sesión</button>
+                <button onClick={login} type="button">Iniciar Sesión</button>
             </form>
         </section>
 
