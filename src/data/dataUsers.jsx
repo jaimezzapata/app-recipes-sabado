@@ -4,8 +4,8 @@ export let users = [
         "phone": "945-617-9930 x88233",
         "zip": "70542-6526",
         "city": "South Lucienne",
-        "email": "Yvonne_Heidenreich@gmail.com",
-        "password": "51mPry_sMgVG2up"
+        email: "Yvonne_Heidenreich@gmail.com",
+        password: "51mPry_sMgVG2up"
     },
     {
         "birthday": "2023-11-30T18:29:10.732Z",
