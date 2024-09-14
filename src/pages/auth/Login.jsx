@@ -1,8 +1,8 @@
 import Header from "../../components/Header"
-
+import './Login.css'
 const Login = () => {
     return (
-        <section>
+        <section className="sectionLogin">
             <Header />
             <form>
                 <section>
@@ -19,5 +19,4 @@ const Login = () => {
 
     )
 }
-
 export default Login

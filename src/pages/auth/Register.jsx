@@ -1,4 +1,5 @@
 import Header from "../../components/Header"
+import './Register.css'
 const Register = () => {
     return (
         <section>
