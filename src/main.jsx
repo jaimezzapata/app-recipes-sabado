@@ -5,6 +5,7 @@ import './index.css'
 import Register from './pages/auth/Register'
 import Login from './pages/auth/Login'
 import Home from './pages/Home'
+import Dashboard from './pages/Dashboard'
 let router = createBrowserRouter([
   {
     path: '/login',
@@ -17,6 +18,10 @@ let router = createBrowserRouter([
   {
     path: '/',
     element: <Home />
+  },
+  {
+    path: '/dashboard',
+    element: <Dashboard />
   }
 ])
 
