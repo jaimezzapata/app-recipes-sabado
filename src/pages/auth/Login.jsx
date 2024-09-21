@@ -2,12 +2,14 @@ import { useState } from "react"
 import { users } from "../../data/dataUsers"
 import Header from "../../components/Header"
 import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom'
 import './Login.css'
 
 const Login = () => {
 
     const [getUser, setUser] = useState('Jaime Zapata')
     const [getPassword, setPassword] = useState('')
+    let redireccion = useNavigate()
     console.log(users[0])
     function login() {
         if (buscarUsuario()) {
@@ -27,12 +29,14 @@ const Login = () => {
                 },
                 willClose: () => {
                     clearInterval(timerInterval);
+                    redireccion('/dashboard')
                 }
             }).then((result) => {
                 /* Read more about handling dismissals below */
                 if (result.dismiss === Swal.DismissReason.timer) {
                     console.log("I was closed by the timer");
                 }
+
             });
         } else {
             Swal.fire({
