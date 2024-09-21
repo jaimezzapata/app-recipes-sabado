@@ -22,11 +22,11 @@ const Login = () => {
             <form>
                 <section>
                     <label htmlFor="">Usuario</label>
-                    <input value={getUser} onChange={(e)=> setUser(e.target.value) } type="email" />
+                    <input value={getUser} onChange={(e) => setUser(e.target.value)} type="email" />
                 </section>
                 <section>
                     <label htmlFor="">Contraseña</label>
-                    <input value={getPassword} onChange={(e)=> setPassword(e.target.value) } type="password" />
+                    <input value={getPassword} onChange={(e) => setPassword(e.target.value)} type="password" />
                 </section>
                 <button onClick={login} type="button">Iniciar Sesión</button>
             </form>
