@@ -6,6 +6,8 @@ import Register from './pages/auth/Register'
 import Login from './pages/auth/Login'
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
+import Vegetarian from './pages/recipes/Vegetarian'
+import NonVegetarian from './pages/recipes/NonVegetarian'
 let router = createBrowserRouter([
   {
     path: '/login',
@@ -20,8 +22,18 @@ let router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: '/dashboard',
-    element: <Dashboard />
+    path: '/dashboard/',
+    element: <Dashboard />,
+    children: [
+      {
+        path: 'vegetarian',
+        element: <Vegetarian />
+      },
+      {
+        path: 'non-vegetarian',
+        element: <NonVegetarian />
+      },
+    ]
   }
 ])
 
