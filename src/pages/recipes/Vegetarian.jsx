@@ -1,5 +1,6 @@
 import './Recipes.css'
 import { vegetarianRecipes } from '../../data/dataRecipes'
+
 const Vegetarian = () => {
   return (
     <div className="recipes">
@@ -7,10 +8,11 @@ const Vegetarian = () => {
       <section className="cards">
         {
           vegetarianRecipes.map((vegetarianRecipe) => (
-            <div>
+            <div className='card'>
               <h3>Nombre: {vegetarianRecipe.nombre}</h3>
               <p>Descripcion: {vegetarianRecipe.descripcion}</p>
               <p>Dificultad: {vegetarianRecipe.dificultad}</p>
+              <p>tiempo: {vegetarianRecipe.tiempo}</p>
               <p>tiempo: {vegetarianRecipe.tiempo}</p>
               <div>
                 <button>Eliminar</button>
