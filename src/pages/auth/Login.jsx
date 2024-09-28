@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom'
 import './Login.css'
 
 const Login = () => {
-
     const [getUser, setUser] = useState('Jaime Zapata')
     const [getPassword, setPassword] = useState('')
     let redireccion = useNavigate()
