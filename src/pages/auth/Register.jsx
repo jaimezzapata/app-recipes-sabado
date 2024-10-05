@@ -9,9 +9,21 @@ const Register = () => {
     const [getPassword, setPassword] = useState('')
     const [getEmail, setEmail] = useState('')
 
-    const createUser = () => {
-        
+    const createUser = async () => {
+        await fetch(urlUsuarios, {
+            method: 'POST',
+            body: {
+                user: getUsuario,
+                password: getPassword,
+                email: getEmail
+            }
+        })
+        // console.log('Creación de usuario')
     }
+
+    // async function nuevaFuncion(){
+
+    // }
 
     return (
         <section>
@@ -29,7 +41,7 @@ const Register = () => {
                     <label htmlFor="">Correo</label>
                     <input onChange={(e) => { setEmail(e.target.value) }} type="email" />
                 </section>
-                <button type="button">Registrar</button>
+                <button onClick={createUser} type="button">Registrar</button>
             </form>
         </section>
     )
