@@ -10,9 +10,9 @@ const Register = () => {
     const [getEmail, setEmail] = useState('')
 
     const createUser = () => {
-
+        
     }
-    
+
     return (
         <section>
             <Header />
