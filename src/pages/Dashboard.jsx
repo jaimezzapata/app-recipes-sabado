@@ -5,7 +5,6 @@ const Dashboard = () => {
     return (
         <div>
             <Header />
-            <h1>Este es el Dashboard</h1>
             <section className='panel-control'>
                 <aside>
                     <nav>
